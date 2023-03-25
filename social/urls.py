@@ -26,4 +26,6 @@ urlpatterns = [
     re_path(r'^thanks/$',views.Thankspage.as_view(),name='thanks'),
     re_path(r"^posts/", include("posts.urls", namespace="posts")),
     re_path(r"^groups/",include("groups.urls", namespace="groups")),
+    re_path(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
