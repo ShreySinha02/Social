@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-x=q$5$kl$d$iperp$q1e+mgr4yzfeer_b2s!0)dhm8oq7+f+wp
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+# CSRF_TRUSTED_ORIGINS = ['*']
 
 # Application definition
 
